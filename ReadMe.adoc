@@ -1,0 +1,54 @@
+:source-highlighter: highlightjs
+
+= ReadMe
+
+== このソフトウェアについて
+
+AsciiDoctorコマンド一括実行スクリプトでDBにある存在しないファイルパスを持ったレコードを削除する。
+
+== 前回
+
+* AsciiDoctor.Run.Commands.CheckDate.201705171430
+
+== 開発環境
+
+* LinuxMint 17.3 MATE 32bit
+** http://ytyaru.hatenablog.com/entry/2017/05/30/000000[rbenv]
+*** Ruby 2.4.0
+**** http://ytyaru.hatenablog.com/entry/2017/06/20/000000[AsciiDoctor]
+** Firefox
+*** http://ytyaru.hatenablog.com/entry/2017/06/19/000000[AsciiDoc ビューア]
+** pluma
+*** http://ytyaru.hatenablog.com/entry/2017/06/18/000000[AsciiDoc ハイライト]
+
+== 参考
+
+* http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#ui-macros
+
+== 実行
+
+[source, python]
+----
+python Main.py
+----
+
+== 結果
+
+* 各ディレクトリにあるAsciiDocファイルからHTMLを作成するコマンドが実行される
+* すべてのHTMLは同一のCSSを参照している
+
+== ライセンス
+
+このソフトウェアはCC0ライセンスである。
+
+image:http://i.creativecommons.org/p/zero/1.0/88x31.png[link=http://creativecommons.org/publicdomain/zero/1.0/deed.ja]
+
+利用したソフトウェアとそのライセンスは以下。感謝。
+
+[options="header, autowidth"]
+|=======================
+|Library|License|Copyright
+|http://asciidoctor.org/[AsciiDoctor]|https://github.com/asciidoctor/asciidoctor/blob/master/LICENSE.adoc[MIT]|Copyright (C) 2012-2016 Dan Allen, Ryan Waldron and the Asciidoctor Project
+|https://highlightjs.org/[highlight.js]|https://github.com/isagalaev/highlight.js/blob/master/LICENSE[BSD 3-clause]|Copyright (c) 2006, Ivan Sagalaev
+|=======================
+
